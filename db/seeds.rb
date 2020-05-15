@@ -45,7 +45,7 @@ section = Section.create!(
 )
 
 section_courses = Section.create!(
-  name: 'Cursos Pangeas',
+  name: 'Pangeas Plus',
   description: 'some section description',
   image_url: 'http://image.ibb.co/dhkkuG/Icone_Cursos_Pangeas.png'
 )
