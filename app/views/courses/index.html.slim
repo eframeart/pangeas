@@ -12,7 +12,7 @@
           .auto.cell.show-for-medium
         h5
           ' Aqui você encontra
-          span.bg-highlight> cursos para aprofundar seu conhecimento
+          span.bg-highlight> conteúdos para aprofundar seu conhecimento
           ' com profissionais de destaque. Você decide a velocidade de
           ' aprendizado, tendo acesso a todas as aulas desde o princípio.
           ' E o melhor,
@@ -22,7 +22,7 @@
             courses_path,
             class: 'button success large mt-2rem'
         - elsif current_user&.courses?
-          = link_to 'Cursos que já comprei',
+          = link_to 'Conteúdos que já comprei',
             courses_path(my_courses: true),
             class: 'button pink-button large mt-2rem'
   - if @courses
@@ -47,7 +47,7 @@
                   = simple_format(course.description, class: 'description')
                   .pricing
                     h5
-                      span.bg-highlight VALOR DO CURSO: R$
+                      span.bg-highlight VALOR: R$
                       span.bg-highlight= course.price
                     h5
                       ' Assinante Pangeas: R$
