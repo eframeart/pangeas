@@ -5,7 +5,7 @@ class CoursesController < ApplicationController
 
   def index
     authorize Course
-    @section = Section.find_by(name: 'Pangeas Plus')
+    @section = Section.find_by(name: 'Cursos Pangeas')
     subsection_courses = @section.subsections.find_by(name: 'courses')
     @courses =
       if params[:my_courses]
