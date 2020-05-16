@@ -2,20 +2,14 @@
   .hero
     .grid-container.text-center
       .grid-x.grid-padding-x.bg-tablet
-        .show-for-xlarge.large-4.cell.img-left
-          p.audience Para quem busca equilíbrio na sua vida.
-          = image_tag 'person-sitting.png'
         .small-12.medium-8.medium-centered.large-4.cell.title
           = image_tag 'logo-transparent.png'
           h2.bold
-            ' Aqui você assiste Cultura de
-            span.bg-highlight Saúde e Liberdade
+            'conteúdo para você
+            span.bg-highlight saber ser...
           = link_to 'Clique e saiba como começar',
             new_subscription_path,
             class: 'button success large'
-        .show-for-xlarge.large-4.cell.img-right
-          p.audience.right-0 Para o novo profissional de saúde e bem-estar.
-          = image_tag 'person-book.png'
   .info
     .grid-container
       .grid-x
