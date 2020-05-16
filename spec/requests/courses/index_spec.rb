@@ -7,7 +7,7 @@ RSpec.describe 'GET /courses', type: :request do
 
   let!(:section) do
     Section.create!(
-      name: 'Cursos Pangeas',
+      name: 'Pangeas Plus',
       description: 'some section description',
       image_url: 'http://image-url'
     )
