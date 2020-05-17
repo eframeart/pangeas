@@ -1,33 +1,35 @@
 .home-container
   .hero
     .grid-container.text-center
-      .grid-x.grid-padding-x.bg-home1
+      .grid-x.grid-padding-x.bg-tablet
+        .show-for-xlarge.large-4.cell.img-left
+          p.audience Para quem busca equilíbrio na sua vida.
+          = image_tag 'person-sitting.png'
         .small-12.medium-8.medium-centered.large-4.cell.title
           = image_tag 'logo-transparent.png'
-          h5.bold
-            'conteúdo para você
-            span.bg-highlight> saber ser...
+          h2.bold
+            ' Aqui você assiste Cultura de
+            span.bg-highlight Saúde e Liberdade
           = link_to 'Clique e saiba como começar',
             new_subscription_path,
             class: 'button success large'
-
-  .description
-     .grid-container.text-center
-      h5
-       span.bold> Você descobriu a Pangeas...
-       ' Um espaço criado especialmente
-       ' para você, que deseja tomar
-       span.bg-highlight.bold> decisões mais conscientes na busca por equilíbrio
-       ' físico, mental, social, ambiental e espiritual.
-       span.bold> Junte-se a todos nós!
-
-  .info3
-     .grid-container.text-center
-      .grid-x.grid-padding-x.bg-home1
-          h2.title
-            'conteúdo para você
-            span.bg-highlight> saber ser...
-
+        .show-for-xlarge.large-4.cell.img-right
+          p.audience.right-0 Para o novo profissional de saúde e bem-estar.
+          = image_tag 'person-book.png'
+  .info
+    .grid-container
+      .grid-x
+        .small-12.medium-10.medium-centered.cell.text-center
+          h5
+            ' Você descobriu a Pangeas... Um espaço online por assinatura que
+            ' produz e reúne vídeos (aulas, séries, palestras, cursos,
+            ' documentários) para quem quer tomar
+            span.bg-highlight> decisões mais conscientes
+            ' na
+            span.bg-highlight> busca por equilíbrio
+            ' físico, mental, social, ambiental e espiritual. Junte-se a todos
+            | nós!
+    = render 'layouts/info'
     = render \
       partial: 'layouts/call_to_action',
       locals: { \
