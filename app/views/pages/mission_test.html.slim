@@ -1,57 +1,39 @@
 .mission-container
   .grid-container
     h3.title
-      ' Carta para
-      span.bg-highlight> todos
-      | nessa Pangeas
+      ' Saúde é uma questão de liberdade...
+      | Liberdade é uma questão de
+      span.bg-highlight> Cultura.
     .grid-x.mission-text-container
       .small-12.medium-1.cell.position-relative
         = fa_icon 'quote-left 3x', class: 'icon-quote-left'
       .small-12.medium-10.medium-centered.cell.mission-text
         p
-          | Livre,
-          br
-          ' Eu sou. Livre porque
-          span.bg-highlight> sei questionar a liberdade:
-          ' Quem me
-          ' impede de comer melhor? O que permite que as doenças continuem
-          ' crescendo no mundo? Por que minhas emoções tem tanta força? O que
-          | cria o medo que me prende em casa? etc.
+          | Queremos ser, antes de tudo, livres.
         p
-          ' Mas não confundo liberdade com falta de responsabilidade ou com
-          ' fuga da realidade. Sei que
-          span.bg-highlight> posso escolher meu caminho
-          ' e que cada
-          ' escolha cria novos laços, para serem mantidos ou para serem
-          | desatados.
+          '
+          span.bg-highlight> Não parcialmente, não aparentemente...Totalmente livres.
         p
-          ' Por isso sei que para ser livre eu posso entender melhor como
-          ' funcionam minhas emoções. Posso descobrir quais realmente são os
-          ' alimentos e os movimentos que fazem meu corpo ter sua melhor forma.
-          ' Posso parar para respirar e sair do roteiro que o mundo inteiro
-          ' escreveu para eu interpretar. E, então,
+          ' Sermos livres porque sabemos questionar a liberdade: Quem nos impede de comer melhor?
+          ' O que permite que o mundo siga adoecendo? Por que nossas emoções tem tanta força de
+          ' transformação, para o bem ou para o mal?
+          |  Onde mora o medo que nos prende em casa?
+        p
+          ' A busca por essas respostas é o que move nossa vontade e guia nossas ideias
+          ' É o que concretiza elas em novas narrativas, novos conhecimentos e novas atitudes.
+          span.bg-highlight> É o que nos ensina a observar a causa (e não somente o sintoma)
+          ' de nossos problemas de saúde, de relacionamento,
+          | políticos, econômicos e ambientais.
+        p
+          ' É o que mora no coração de cada um dos conteúdos
+          ' que nascem nessa nossa Pangeas...
+          ' E transforma a vida de todos que estão
           span.bg-highlight>
-            ' observar melhor a causa (e não somente o sintoma) dos nossos
-            | problemas
-          ' de saúde, de
-          ' relacionamentos, políticos, econômicos, ambientais... Quem sabe até
-          ' entender o equilíbrio que a natureza descobriu em bilhões de anos e
-          ' finalmente poder parar de sugar/temer para começar somente a
-          | nutri-la.
-        p
-          ' O que tenho aqui, obviamente, precisa melhorar. Sempre precisar
-          ' melhorar. Porque quanto mais livre algo é, mais livre pode ser.
-          ' Porém, no meio de
-          span.bg-highlight> ideias novas e práticas ancestrais, já tenho
-          ' algumas pérolas para apresentar. Jóias duras o suficiente para
-          ' quebrar a identidade sem autoconsciência que nossa humanidade criou
-          | e belas o bastante para continuarmos querendo vê-las evoluir.
-        p
-          ' No mínimo, espero que as ideias que descubro em liberdade sejam
-          ' responsáveis por te ajudar a também
-          span.bg-highlight parar e respirar.
+            ' juntos nessa jornada para
+            | saber ser.
       .small-12.medium-1.cell.position-relative
         = fa_icon 'quote-right 3x', class: 'icon-quote-right'
+    = render 'layouts/info'
     = render \
       partial: 'layouts/call_to_action',
       locals: { \
