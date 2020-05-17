@@ -1,0 +1,39 @@
+.info-container
+  .grid-container
+    .grid-x
+      .medium-10.medium-centered.cell
+        .grid-x.black-box.text-center
+          .medium-5.cell
+            = image_tag 'person-press-play.png'
+          .medium-2.cell.play
+            a data-open='info-video'
+              = image_tag 'home-play.png'
+            .reveal.large#info-video[
+              data-reveal="true"
+              data-reset-on-close="true"
+            ]
+              button[
+                class="close-button"
+                data-close
+                aria-label="Close modal"
+                type="button"
+              ]
+                span aria-hidden="true" &times;
+              .responsive-embed.widescreen
+                iframe[
+                  src="https://player.vimeo.com/video/244211236"
+                  frameborder="0"
+                  gesture="media"
+                  allowfullscreen
+                ]
+          .medium-5.cell
+            ol.text-left
+              li
+                ' É só assinar para acessar todo o nosso conteúdo do celular,
+                | note e tablet.
+              li
+                ' Vídeos práticos para o iniciante e mais aprofundados para o
+                | profissional.
+              li
+                ' Conhecimentos novos e ancestrais de diferentes lugares do
+                | mundo.
